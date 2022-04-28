@@ -11,7 +11,6 @@ const GlobalTemplate = createGlobalStyle<IThemeInterface>`
     position: relative;
     overflow-x: hidden;
     margin: 0;
-    min-height: 19000px;
   }
 
 
