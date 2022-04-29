@@ -46,3 +46,10 @@ export const fontsRule = {
     test: /\.(woff(2)?|eot|ttf|otf|)$/,
     type: 'asset/inline',
 };
+
+export const cssRule = {
+  // Preprocess 3rd party .css files located in node_modules
+  test: /\.css$/,
+  include: /node_modules/,
+  use: ['style-loader', 'css-loader'],
+};
