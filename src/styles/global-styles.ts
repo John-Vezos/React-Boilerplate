@@ -26,13 +26,24 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.34;
   }
 
+  
+  label,
+  button {
+    font-size: var(--font-size-default);
+    line-height: 1.34;
+  }
+
   input, select {
     font-family: inherit;
     font-size: inherit;
   }
   
+ 
+  
   @media only screen and (max-width: 767px) {
-    :root  {
+    :root,
+    label,
+    button {
       font-size: var(--font-size-mobile-default);
     }
   }
