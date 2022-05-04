@@ -9,6 +9,21 @@ declare module '*.json' {
   export default content;
 }
 
+
+declare module "*.png" {
+  const content: string;
+  export default content;
+}
+declare module "*.jpg" {
+  const content: string;
+  export default content;
+}
+declare module "*.gif" {
+  const content: string;
+  export default content;
+}
+
+
 declare const IS_PROD: boolean;
 declare const IS_DEV: boolean;
 declare const IS_DEV_SERVER: boolean;
