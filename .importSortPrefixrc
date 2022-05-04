@@ -6,6 +6,7 @@
     ],
     [
       "@images",
+      "@icons",
       "@styles"
     ]
   ]
