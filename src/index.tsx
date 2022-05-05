@@ -2,6 +2,8 @@
  * Created by: Andrey Polyakov (andrey@polyakov.im)
  */
 
+import '@styles/fonts.css';
+
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
