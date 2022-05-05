@@ -33,8 +33,6 @@ const App = () => {
           <Route path="/" element={<TestPage />} />
         </Routes>
         <GlobalStyle />
-        <GlobalFonts />
-        <GlobalTemplate />
       </AppWrapper>
     </ThemeProvider>
   );
