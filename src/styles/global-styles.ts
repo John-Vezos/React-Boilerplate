@@ -1,6 +1,11 @@
+import FontsStyle from '@styles/fontStyles';
+import TemplateStyles from '@styles/templateStyles';
+
 import { createGlobalStyle } from './styled-components';
 
 const GlobalStyle = createGlobalStyle`
+  ${FontsStyle}
+  ${TemplateStyles}
   
   :root {
     --font-size-peta: 3.04rem;
