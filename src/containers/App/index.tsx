@@ -5,9 +5,7 @@ import TestPage from '@src/containers/TestPage';
 
 import Header from '@components/Header';
 
-import GlobalFonts from '@styles/global-fonts';
 import GlobalStyle from '@styles/global-styles';
-import GlobalTemplate from '@styles/global-template';
 import styled from '@styles/styled-components';
 import { theme } from '@styles/styled-components';
 import { ThemeProvider } from '@styles/styled-components';
