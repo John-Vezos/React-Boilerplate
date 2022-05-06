@@ -6,6 +6,10 @@ const FontsStyle = css`
   body {
     font-family: SourceSerif, Georgia, Times, 'Times New Roman', serif;
   }
+  
+  textarea {
+    font-family: inherit;
+  }
 
   body.fontLoaded,
   button {
