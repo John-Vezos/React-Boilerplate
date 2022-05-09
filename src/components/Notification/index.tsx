@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Wrapper } from './Wrapper';
 
 interface Props {
-  status: string | null;
+  status?: string;
   title?: string;
   message?: string;
   onClick?(): void;
