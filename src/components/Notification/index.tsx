@@ -1,5 +1,7 @@
 import ReactDOM from 'react-dom';
 
+import SvgCloseX from '@components/Notification/CloseX';
+
 import { Wrapper } from './Wrapper';
 
 interface Props {
@@ -13,6 +15,7 @@ const Notification = ({ status, title, message, onClick }: Props) => {
     <Wrapper status={status} onClick={onClick}>
       <strong>{title}</strong>
       {message}
+      <SvgCloseX />
     </Wrapper>,
     document?.getElementById('overlay-root') || document.createElement('div'),
   );
