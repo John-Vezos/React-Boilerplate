@@ -7,7 +7,7 @@ export type UIState = {
   isLightTheme: boolean;
 };
 const initialUIState: UIState = {
-  notification: { status: ``, title: ``, message: `` },
+  notification: null,
   isLightTheme: localStorage.getItem('theme-preference') !== 'dark',
 };
 
