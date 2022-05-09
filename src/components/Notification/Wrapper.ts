@@ -25,6 +25,11 @@ export const Wrapper = styled.section<Props>`
   & strong {
     margin-right: 5px;
   }
+  & svg {
+    position: absolute;
+    right: 5%;
+    top: 12.5px;
+  }
 
   ${props =>
     props.status === 'success' &&
