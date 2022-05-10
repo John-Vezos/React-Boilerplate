@@ -7,6 +7,7 @@ const FontsStyle = css`
     font-family: SourceSerif, Georgia, Times, 'Times New Roman', serif;
   }
   
+  pre,
   textarea {
     font-family: inherit;
   }
