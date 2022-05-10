@@ -10,6 +10,7 @@ export const Wrapper = styled.section<Props>`
   padding: 0.5rem 10%;
   margin: 0;
   font-size: 1rem;
+  z-index: 100;
   cursor: pointer;
 
   border: 1px solid rgba(6, 44, 241, 0.46);
