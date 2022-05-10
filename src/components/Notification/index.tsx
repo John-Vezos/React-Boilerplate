@@ -13,8 +13,10 @@ interface Props {
 const Notification = ({ status, title, message, onClick }: Props) => {
   return ReactDOM.createPortal(
     <Wrapper status={status} onClick={onClick}>
-      <strong>{title}</strong>
-      {message}
+      <pre>
+        <strong>{title}</strong>
+        {message}
+      </pre>
       <SvgCloseX />
     </Wrapper>,
     document?.getElementById('overlay-root') || document.createElement('div'),
