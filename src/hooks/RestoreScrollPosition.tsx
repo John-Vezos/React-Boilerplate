@@ -11,7 +11,7 @@ const RestoreScrollPosition: FunctionComponent = (): null => {
     window.history.scrollRestoration = 'manual';
     window.addEventListener('beforeunload', windowBeforeUnloadHandler);
 
-    const scrollY = localStorage.getItem('scrollBar');
+    const scrollY = sessionStorage.getItem('scrollBar');
     if (scrollY) {
       animateScroll.scrollTo(Number(scrollY), {
         duration: 800,
@@ -20,7 +20,7 @@ const RestoreScrollPosition: FunctionComponent = (): null => {
         smooth: 'easeInOutQuart',
       });
 
-      localStorage.removeItem('scrollBar');
+      sessionStorage.removeItem('scrollBar');
     }
 
     return () =>
@@ -38,7 +38,7 @@ const RestoreScrollPosition: FunctionComponent = (): null => {
   };
 
   const windowBeforeUnloadHandler = () =>
-    localStorage.setItem('scrollBar', window.scrollY.toString());
+    sessionStorage.setItem('scrollBar', window.scrollY.toString());
 
   return null;
 };
