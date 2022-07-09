@@ -2,7 +2,7 @@ import { DefaultRootState, useSelector } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
 
 import NotificationContainer from '@src/containers/Notification';
-import TestPage from '@src/containers/TestPage';
+import TestPage from '@src/containers/TestPage/Loadable';
 
 import Header from '@components/Header';
 
