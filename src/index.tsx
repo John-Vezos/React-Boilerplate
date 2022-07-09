@@ -16,7 +16,7 @@ import Cookies from '@components/Cookies';
 import store from './Redux/index';
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') || document.createElement('div'),
+  document.getElementById('root') as HTMLElement,
 );
 
 root.render(
