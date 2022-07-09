@@ -7,9 +7,7 @@ import TestPage from '@src/containers/TestPage';
 import Header from '@components/Header';
 
 import GlobalStyle from '@styles/global-styles';
-import styled from '@styles/styled-components';
-import { theme } from '@styles/styled-components';
-import { ThemeProvider } from '@styles/styled-components';
+import styled, { ThemeProvider, theme } from '@styles/styled-components';
 
 const AppWrapper = styled.div`
   max-width: calc(768px + 16px * 2);
