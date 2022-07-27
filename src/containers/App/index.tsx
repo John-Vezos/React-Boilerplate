@@ -10,12 +10,9 @@ import GlobalStyle from '@styles/global-styles';
 import styled, { ThemeProvider, theme } from '@styles/styled-components';
 
 const AppWrapper = styled.div`
-  max-width: calc(768px + 16px * 2);
+ max-width: calc(768px + 16px * 2);
   margin: 0 auto;
   padding-inline: 16px;
-`;
-
-const AppBody = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 19000px;
@@ -28,14 +25,12 @@ const App = () => {
   return (
     <ThemeProvider theme={isLightTheme ? theme.lightTheme : theme.darkTheme}>
       <AppWrapper>
-        <AppWrapper>
-          <NotificationContainer />
-          <Header />
-          <Routes>
-            <Route path="/" element={<TestPage />} />
-          </Routes>
-          <GlobalStyle />
-        </AppWrapper>
+        <NotificationContainer />
+        <Header />
+        <Routes>
+          <Route path="/" element={<TestPage />} />
+        </Routes>
+        <GlobalStyle />
       </AppWrapper>
     </ThemeProvider>
   );
