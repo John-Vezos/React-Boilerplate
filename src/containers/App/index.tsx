@@ -16,7 +16,6 @@ const AppWrapper = styled.div`
 `;
 
 const AppBody = styled.div`
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   min-height: 19000px;
