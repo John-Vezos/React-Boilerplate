@@ -12,8 +12,12 @@ import styled, { ThemeProvider, theme } from '@styles/styled-components';
 const AppWrapper = styled.div`
   max-width: calc(768px + 16px * 2);
   margin: 0 auto;
+  padding-inline: 16px;
+`;
+
+const AppBody = styled.div`
+  overflow: hidden;
   display: flex;
-  padding: 0 16px;
   flex-direction: column;
   min-height: 19000px;
 `;
@@ -25,12 +29,14 @@ const App = () => {
   return (
     <ThemeProvider theme={isLightTheme ? theme.lightTheme : theme.darkTheme}>
       <AppWrapper>
-        <NotificationContainer />
-        <Header />
-        <Routes>
-          <Route path="/" element={<TestPage />} />
-        </Routes>
-        <GlobalStyle />
+        <AppWrapper>
+          <NotificationContainer />
+          <Header />
+          <Routes>
+            <Route path="/" element={<TestPage />} />
+          </Routes>
+          <GlobalStyle />
+        </AppWrapper>
       </AppWrapper>
     </ThemeProvider>
   );
