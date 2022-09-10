@@ -65,19 +65,11 @@ export const ThemeToggleStyle = styled.button<Props>`
 
     & > :is(.moon, .sun) {
       fill: var(--icon-fill);
-
-      //@nest .theme-toggle:is(:hover, :focus-visible) > & {
-      //  fill: var(--icon-fill-hover);
-      //}
     }
 
     & > .sun-beams {
       stroke: var(--icon-fill);
       stroke-width: 2px;
-
-      //@nest .theme-toggle:is(:hover, :focus-visible) & {
-      //  stroke: var(--icon-fill-hover);
-      //}
     }
 
     ${props =>
