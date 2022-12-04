@@ -40,7 +40,7 @@ const TemplateStyles = css`
     /* scroll bar firefox */
     scrollbar-color: ${props => props.theme.scrollBar}
       ${props => props.theme.scrollBarBg};
-    scrollbar-width: normal;
+    scrollbar-width: auto;
   }
 
   input:-webkit-autofill,
