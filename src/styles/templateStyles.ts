@@ -54,6 +54,8 @@ const TemplateStyles = css`
 
   img {
     vertical-align: middle;
+    display: block;
+    max-width: 100%;
   }
 `;
 
