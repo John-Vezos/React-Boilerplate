@@ -17,6 +17,10 @@ const FontsStyle = css`
     font-family: Averta, 'Open Sans', 'Helvetica Neue', Helvetica, Arial,
       sans-serif;
   }
+  
+  button {
+    border: none;
+  }
 
   h1,
   h2,
