@@ -7,21 +7,25 @@
  */
 
 import React, { Children, ReactNode } from 'react';
+import { FlattenSimpleInterpolation } from 'styled-components';
 
 import A from './A';
 import StyledButton from './StyledButton';
-import Wrapper from './Wrapper';
 
 export interface Props {
-  handleRoute?(): void;
   href?: string;
-  onClick?(): void;
   children?: ReactNode;
+  css?: FlattenSimpleInterpolation;
+
+  handleRoute?(): void;
+
+  onClick?(): void;
 }
-const Button = ({ handleRoute, href, onClick, children }: Props) => {
+
+const Button = ({ handleRoute, href, onClick, css, children }: Props) => {
   // Render an anchor tag
   let button = (
-    <A href={href} onClick={onClick}>
+    <A href={href} onClick={onClick} css={css}>
       {Children.toArray(children)}
     </A>
   );
@@ -35,7 +39,7 @@ const Button = ({ handleRoute, href, onClick, children }: Props) => {
     );
   }
 
-  return <Wrapper>{button}</Wrapper>;
+  return button;
 };
 
 export default Button;
