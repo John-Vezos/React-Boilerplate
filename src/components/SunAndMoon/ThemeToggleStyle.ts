@@ -1,9 +1,6 @@
 import styled, { css } from '@styles/styled-components';
-interface Props {
-  isLightTheme: boolean;
-}
 
-export const ThemeToggleStyle = styled.button<Props>`
+export const ThemeToggleStyle = styled.button`
   --size: 2rem;
   --icon-fill: hsl(210 10% 30%);
   --icon-fill-hover: hsl(210 10% 15%);
@@ -38,7 +35,7 @@ export const ThemeToggleStyle = styled.button<Props>`
   }
 
   ${props =>
-    !props.isLightTheme &&
+    !props.theme.isLight &&
     css`
       --icon-fill: hsl(210 10% 70%);
       --icon-fill-hover: hsl(210 15% 90%);
@@ -73,7 +70,7 @@ export const ThemeToggleStyle = styled.button<Props>`
     }
 
     ${props =>
-      !props.isLightTheme &&
+      !props.theme.isLight &&
       css`
         & > .sun {
           transform: scale(1.75);
@@ -111,7 +108,7 @@ export const ThemeToggleStyle = styled.button<Props>`
     }
 
     ${props =>
-      !props.isLightTheme &&
+      !props.theme.isLight &&
       css`
         & > .sun {
           transform: scale(1.75);
