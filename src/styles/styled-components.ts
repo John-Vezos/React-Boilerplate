@@ -3,6 +3,7 @@ import * as styledComponents from 'styled-components';
 // theme.ts
 // your theme variables
 export interface IThemeInterface {
+  isLight: boolean;
   primary?: string;
   primaryBackground?: string;
   componentBackground?: string;
@@ -12,8 +13,12 @@ export interface IThemeInterface {
   scrollBarBg?: string;
 }
 
-export const theme = {
+export const theme: {
+  lightTheme: IThemeInterface;
+  darkTheme: IThemeInterface;
+} = {
   lightTheme: {
+    isLight: true,
     primary: '#000',
     primaryBackground: '#F9F9F9',
     componentBackground: '#FFF',
@@ -24,6 +29,7 @@ export const theme = {
     scrollBarBg: '#F9F9F9' || '#FFF',
   },
   darkTheme: {
+    isLight: false,
     primary: '#FFF',
     primaryBackground: '#2F3337',
     componentBackground: '#2F3337',
